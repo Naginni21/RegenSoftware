@@ -1,0 +1,33 @@
+
+# Programa Principal
+# Partamos con la estructura:
+# Me imagino hacer una clase Vehiculo, este va a tener todas las caracteristicas del vehiculo que necesitamos y las funciones
+# para actualizarlos.
+#       *Velocidad (t)
+#       *Pendiente(derivada_Altitud) (t)
+#       *Masa (t)
+#       *Compactador (t)
+# Se crea una instancia del objeto vehiculo y a medida que pasa el tiempo van cambiando sus parametros:
+#       *
+#       *
+#       *
+#       *
+# Estos parametros se van actualizando tomando valores de los archivos importados. Habra solo un archivo .csv donde cada columna
+# es un parametro y cada fila un tiempo.
+#
+# Aparte tendremos una clase motor hidraulico, acumulador hidraulico, motor combustion, etc. Donde se evaluara cada cambio en el tiempo
+# y se iran modificando sus parametros en base a las ecuaciones del DresMan.
+#
+# Todas las clases y sus funciones van en archivos separados. Aqui solo se corre el programa principal dinamico.
+
+class Vehiculo(object):
+    def __init__(self, initial_X=0):
+        self.X = initial_X
+    def cambioX(self, parametro_exterior):
+        self.cambioX += parametro_exterior
+    def obtenerX(self):
+        return self.X
+el_vehiculo = Vehiculo()
+e_vehiculo.cambioX(5)
+print el_vehiculo.obtenerX
+
